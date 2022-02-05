@@ -1,9 +1,9 @@
-#include "ft_putnbr.c"
+#include "ft_print_combn.c"
 
 void	ft_print_combn(int n);
 
 int	main(void)
 {
-	ft_print_combn(1);
+	ft_print_combn(2);
 	return (0);
 }
