@@ -6,7 +6,7 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 23:55:34 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/06 15:51:43 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/06 23:43:34 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,6 @@ void	write_number(int number)
 
 void	show_comb(int d1, int d2, int d3, int d4)
 {
-	int	ascii_breakline;
-
-	ascii_breakline = 10;
 	if ((d1 == d3 && d2 == d4) || (d1 > d3) || (d1 == d3 && d2 > d4))
 	{
 		return ;
@@ -39,9 +36,9 @@ void	show_comb(int d1, int d2, int d3, int d4)
 	write_number(d4);
 	if (d1 == 9 && d2 == 8 && d3 == 9 && d4 == 9)
 	{
-		write(1, &ascii_breakline, 1);
 		return ;
 	}
+	write(1, ", ", 2);
 	return ;
 }
 
