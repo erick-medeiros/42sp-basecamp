@@ -6,7 +6,7 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 03:54:32 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/05 22:52:02 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/06 15:52:26 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ void	show_number(int *numbers, int n)
 	{
 		if (g_first_show == 1)
 			write(1, ", ", 2);
-		first_show = 1;
+		g_first_show = 1;
 		loop = 9 - n;
 		while (loop < 9)
 		{
@@ -67,7 +67,7 @@ void	show_number(int *numbers, int n)
 	}
 }
 
-void	ft_print_combn_par2(n, numbers)
+void	ft_print_combn_par2(int n, int *numbers)
 {
 	int	loop;
 	int	nx;
@@ -87,7 +87,6 @@ void	ft_print_combn_par2(n, numbers)
 		show_number(numbers, n);
 		loop++;
 	}
-	write(1, "\n", 1);
 	return ;
 }
 
@@ -106,6 +105,6 @@ void	ft_print_combn(int n)
 	numbers[6] = 0;
 	numbers[7] = 0;
 	numbers[8] = 0;
-	ft_print_combn_par2(n numbers);
+	ft_print_combn_par2(n, numbers);
 	return ;
 }
