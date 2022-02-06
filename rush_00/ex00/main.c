@@ -6,7 +6,7 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 02:11:24 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/05 03:06:44 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/06 04:33:54 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,9 @@ void	rush(int x, int y);
 int	main(void)
 {
 	rush(5, 3);
+	rush(5, 1);
+	rush(1, 1);
+	rush(1, 5);
+	rush(4, 4);
 	return (0);
 }

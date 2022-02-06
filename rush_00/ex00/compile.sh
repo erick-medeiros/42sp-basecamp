@@ -1,4 +1,4 @@
 rm a.out
 clear
-cc *.c -Wall -Wextra -Werror
+cc ft_putchar.c main.c rush04.c -Wall -Wextra -Werror
 ./a.out
