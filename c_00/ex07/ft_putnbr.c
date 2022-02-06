@@ -6,7 +6,7 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 12:47:05 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/04 16:30:02 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/06 15:51:58 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ void	run_write(int nb, int loop, int array_numbers[10])
 	}
 	if (nb == 0)
 		write_number(0);
-	write(1, "\n", 1);
 }
 
 void	ft_putnbr(int nb)

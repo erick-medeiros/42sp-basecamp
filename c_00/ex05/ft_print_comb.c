@@ -6,7 +6,7 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 19:36:04 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/06 14:00:39 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/06 15:52:05 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_print_comb(void)
 {
-	int	d[3];
-	int	i;
+	char	d[3];
+	char	i;
 
 	i = 0;
 	while (i >= 0)
@@ -24,10 +24,8 @@ void	ft_print_comb(void)
 		d[1] = '0' + (((i - (i % 10)) / 10) % 10);
 		d[0] = '0' + (((i - (((i - (i % 10)) / 10) % 10)) / 10 / 10) % 10);
 		if (d[0] < d[1] && d[1] < d[2])
-		{	
-			write(1, &d[0], 1);
-			write(1, &d[1], 1);
-			write(1, &d[2], 1);
+		{
+			write(1, d, 3);
 			if (d[0] == '7' && d[1] == '8' && d[2] == '9')
 				break ;
 			else
@@ -35,6 +33,5 @@ void	ft_print_comb(void)
 		}
 		i++;
 	}
-	write(1, "\n", 1);
 	return ;
 }

@@ -6,7 +6,7 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 23:55:34 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/04 03:25:06 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/06 15:51:43 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ void	show_comb(int d1, int d2, int d3, int d4)
 		write(1, &ascii_breakline, 1);
 		return ;
 	}
-	write(1, ", ", 2);
 	return ;
 }
 
