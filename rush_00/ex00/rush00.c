@@ -6,32 +6,43 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 02:11:31 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/06 03:02:50 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/07 01:20:14 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
+void	show(int x, int y, int col, int lin)
+{
+	char	c;
+
+	c = ' ';
+	if (col == 1 || col == x)
+		if (lin == 1 || lin == y)
+			c = 'o';
+	if (col != 1 && col != x)
+		if (lin == 1 || lin == y)
+			c = '-';
+	if (col == 1 || col == x)
+		if (lin != 1 && lin != y)
+			c = '|';
+	ft_putchar(c);
+}
+
 void	rush(int x, int y)
 {
 	int		lin;
 	int		col;
-	char	c;
 
+	if (x <= 0 || y <= 0)
+		return ;
 	lin = 1;
 	while (lin <= y)
 	{
 		col = 1;
 		while (col <= x)
 		{
-			c = ' ';
-			if ((lin == 1 || lin == y) && (col == 1 || col == x))
-					c = 'o';
-			if ((lin == 1 || lin == y) && (col != 1 && col != x))
-					c = '-';
-			if ((lin != 1 && lin != y) && (col == 1 || col == x))
-					c = '|';
-			ft_putchar(c);
+			show(x, y, col, lin);
 			col++;
 		}
 		ft_putchar(10);
