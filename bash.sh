@@ -4,3 +4,5 @@ export PS1="\w >"
 rm -fr .git && rm -f .gitignore
 # copy ex*
 cp -r ./list/ex* ./list_new
+# git ignore not working
+git rm -r --cached .
