@@ -6,7 +6,7 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/04 12:47:05 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/06 15:51:58 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/07 02:35:13 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ void	run_write(int nb, int loop, int array_numbers[10])
 	loop--;
 	loop_show = 9 - loop;
 	while (loop >= 0)
-	{	
+	{
 		write_number(array_numbers[loop_show]);
 		loop_show++;
 		loop--;
