@@ -1,6 +1,7 @@
 #ex01
 export FT_USER=coder
-./print_groups.sh
+chmod 744 
+./ex01/print_groups.sh
 #ex02
 ./find_sh.sh | cat -e
 #ex03
@@ -17,3 +18,5 @@ export FT_LINE1=
 export FT_LINE2=
 ./r_dwssap.sh
 #ex08
+export FT_LINE2=
+export FT_LINE2=
