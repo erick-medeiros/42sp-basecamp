@@ -1,0 +1,11 @@
+./.gitignore
+ex*/*
+!ex00/z
+!ex01/testShell00.tar
+!ex02/exo2.tar
+!ex03/midLS
+!ex04/git_commit.sh
+!ex05/git_ignore.sh
+!ex06/b
+!ex07/clean
+!ex08/ft_magic

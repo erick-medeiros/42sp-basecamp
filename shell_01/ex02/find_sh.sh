@@ -1,2 +1,2 @@
 #!/bin/sh
-find . -type f -name '*.sh' -execdir basename {} .sh \;
+find . -name '*.sh' -execdir basename {} \; | sed 's/.sh$//'
