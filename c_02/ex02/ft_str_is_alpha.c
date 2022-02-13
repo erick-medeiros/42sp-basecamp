@@ -6,9 +6,21 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 20:52:44 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/11 02:33:03 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/13 00:08:16 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int	is_alpha(char c)
+{
+	int	is;
+
+	is = 0;
+	if (c >= 'a' && c <= 'z')
+		is = 1;
+	if (c >= 'A' && c <= 'Z')
+		is = 1;
+	return (is);
+}
 
 int	ft_str_is_alpha(char *str)
 {
@@ -21,9 +33,7 @@ int	ft_str_is_alpha(char *str)
 	{		
 		if (is == 1)
 		{
-			if (str[i] >= 'A' && str[i] <= 'Z')
-				is = 1;
-			if (str[i] >= 'a' && str[i] <= 'z')
+			if (is_alpha(str[i]))
 				is = 1;
 			else
 				is = 0;

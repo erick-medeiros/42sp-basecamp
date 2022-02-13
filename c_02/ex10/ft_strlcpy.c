@@ -6,11 +6,11 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 16:09:23 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/12 01:11:03 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/13 00:01:41 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	strlen(char *str)
+int	ft_strlen(char *str)
 {
 	int	i;
 
@@ -25,7 +25,7 @@ unsigned	int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	unsigned int	i;
 	int				len;
 
-	len = strlen(src);
+	len = ft_strlen(src);
 	if (size > 0)
 	{
 		i = 0;

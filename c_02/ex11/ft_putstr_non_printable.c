@@ -6,7 +6,7 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 01:15:18 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/12 15:03:50 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/13 01:05:38 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void	ft_putstr_non_printable(char *str)
 		if (c_not_printable(str[i]))
 			write(1, &str[i], 1);
 		else
-			write(1, hex(&dest[0], str[i]), 4);
+			write(1, hex(&dest[0], str[i]), 3);
 		i++;
 	}
 }
