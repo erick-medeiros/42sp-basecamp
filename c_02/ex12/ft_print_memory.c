@@ -6,7 +6,7 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 15:01:50 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/12 18:59:24 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/14 19:39:25 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,11 @@ int	g_range_max = 16;
 void	print_memory(void *addr, int range_init)
 {
 	int	i;
+	char *teste;
+
+	// convert void* in char* |-> type casting
+	// malloc(sizeof(char) * 4)
+	// teste = (char *)addr;
 
 	i = range_init;
 	while (i < g_range_max)
