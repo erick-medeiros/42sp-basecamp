@@ -6,9 +6,11 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 13:10:19 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/17 12:22:21 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/18 19:10:19 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 void	ft_putnbr_base_recursion(int nbr, char *base, int size)
 {

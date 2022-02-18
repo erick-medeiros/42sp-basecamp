@@ -6,7 +6,7 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 23:50:43 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/17 13:42:22 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/18 19:09:32 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,14 +46,8 @@ int	ft_atoi_exec(char *str, int end)
 
 int	ft_atoi(char *str)
 {
-	int		val;
-	int		i;
-	int		sin;
 	int		end;
 
-	val = 0;
-	i = 0;
-	sin = 1;
 	end = 0;
 	while (ft_is_whitespace(str[end]))
 		end++;

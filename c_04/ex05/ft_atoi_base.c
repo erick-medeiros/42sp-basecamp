@@ -6,7 +6,7 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/16 19:27:02 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/17 13:16:41 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/18 19:10:03 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,6 @@ int	ft_atoi_exec(char *str, char *base, int size, int end)
 	int	sin;
 	int	mult;
 	int	result;
-	int	i;
 	int	isbase[2];
 
 	sin = 1;
@@ -95,7 +94,6 @@ int	ft_atoi_exec(char *str, char *base, int size, int end)
 
 int	ft_atoi_base(char *str, char *base)
 {
-	int	i;
 	int	size;
 	int	end;
 
