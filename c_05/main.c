@@ -4,7 +4,7 @@
 
 void	ex00()
 {
-	//return ; //disable
+	return ; //disable
 	#include "ex00/ft_iterative_factorial.c"
 	printf("c 05 ex 00\n");
 	printf("> 0\n< %i\n", ft_iterative_factorial(-2));
@@ -15,7 +15,7 @@ void	ex00()
 
 void	ex01()
 {
-	//return ; //disable
+	return ; //disable
 	#include "ex01/ft_recursive_factorial.c"
 	printf("c 05 ex 01\n");
 	printf("> 0\n< %i\n", ft_recursive_factorial(-2));
@@ -27,7 +27,7 @@ void	ex01()
 
 void	ex02()
 {
-	//return ; //disable
+	return ; //disable
 	#include "ex02/ft_iterative_power.c"
 	printf("c 05 ex 02\n");
 	printf("> 0\n< %i\n", ft_iterative_power(4, -1));
@@ -39,7 +39,7 @@ void	ex02()
 
 void	ex03()
 {
-	//return ; //disable
+	return ; //disable
 	#include "ex03/ft_recursive_power.c"
 	printf("c 05 ex 03\n");
 	printf("> 0\n< %i\n", ft_recursive_power(4, -1));
@@ -50,7 +50,7 @@ void	ex03()
 
 void	ex04()
 {
-	//return ; //disable
+	return ; //disable
 	#include "ex04/ft_fibonacci.c"
 	printf("c 05 ex 04\n");
 	printf("> -1\n< %i\n", ft_fibonacci(-2));
@@ -61,7 +61,7 @@ void	ex04()
 
 void	ex05()
 {
-	//return ; //disable
+	return ; //disable
 	#include "ex05/ft_sqrt.c"
 	printf("c 05 ex 05\n");
 	printf("> -2 = 0\n< %i\n", ft_sqrt(-2));
@@ -84,11 +84,13 @@ void	ex06()
 	printf("> not prime 1500\n< %i\n\n", ft_is_prime(1500));
 	printf("> prime 73\n< %i\n\n", ft_is_prime(73));
 	printf("> prime 2147483647\n< %i\n\n", ft_is_prime(2147483647));
+	printf("> moulinette prime 256 = 0\n< %i\n\n", ft_is_prime(256));
+	printf("> 4 = 0\n< %i\n\n", ft_is_prime(4));
 }
 
 void	ex07()
 {
-	//return ; //disable
+	return ; //disable
 	#include "ex07/ft_find_next_prime.c"
 	printf("\nc05 ex07\n\n");
 

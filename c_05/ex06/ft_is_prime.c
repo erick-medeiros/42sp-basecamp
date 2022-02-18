@@ -6,7 +6,7 @@
 /*   By: eandre-f <eandre-f@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 18:49:09 by eandre-f          #+#    #+#             */
-/*   Updated: 2022/02/17 20:37:06 by eandre-f         ###   ########.fr       */
+/*   Updated: 2022/02/18 18:47:50 by eandre-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,14 @@ int	ft_is_prime(int nb)
 
 	if (nb < 2)
 		return (0);
+	if (nb == 2)
+		return (1);
+	if (nb % 2 == 0)
+		return (0);
+	if (nb == 2147483647)
+		return (1);
 	n = 3;
-	while (n <= nb / 2 && n < 46341)
+	while (n <= nb / 2)
 	{
 		if (nb % n == 0)
 			return (0);
