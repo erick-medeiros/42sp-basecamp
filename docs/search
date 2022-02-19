@@ -1,0 +1,11 @@
+unsigned int
+
+menor valor de int 27... -1
+
+convert hexadecimal
+https://helloacm.com/c-program-to-convert-characters-to-hex-c-source-text/
+
+
+// convert void* in char* |-> type casting
+// malloc(sizeof(char) * 4)
+// teste = (char *)addr;

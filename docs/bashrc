@@ -1,7 +1,7 @@
 export PS1="\w >"
 HISTCONTROL=ignoredups
-alias norma="clear && norminette -RCheckForbiddenSourceHeader"
-alias gccm="gcc -Wall -Wextra -Werror"
+alias norma="clear && norminette -R CheckForbiddenSourceHeader ex* ../ex*"
+alias gccm="clear && gcc -Wall -Wextra -Werror main.c"
 alias removedotgit="mv .gitignore gitignore && rm -fr .git"
 alias removecachegit="git rm -r --cached ."
 
