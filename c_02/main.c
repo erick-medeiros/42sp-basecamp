@@ -168,7 +168,7 @@ void	ex08()
 {
 	return ; //disable
 	#include "ex08/ft_strlowcase.c"
-	printf("ex07----------  LowerCase\n");
+	printf("ex08----------  LowerCase\n");
 	char string[3] = "ABC";
 	printf("> %s\n", string);
 	printf("< %s\n", ft_strlowcase(string));
